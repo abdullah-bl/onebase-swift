@@ -17,10 +17,11 @@ let package = Package(
 )
 ```
 
-This folder is developed in the [onebase](https://github.com/abdullah-bl/onebase) repository and
-published to `onebase-swift` on every release (SwiftPM needs a package at the root of a
-repository). From a clone of onebase, or before the first release, depend on the folder instead:
-`.package(path: "../onebase/clients/swift")`, with `package: "swift"` in the product.
+This client is developed in this repository, and released by tagging a version here. It speaks
+the [client protocol](https://github.com/abdullah-bl/onebase/blob/main/docs/client-protocol.md).
+Its tests run against a fake server in `Tests/`, not a real onebase server, so check protocol
+changes in onebase against this client by hand. To work on a local copy, depend on the folder:
+`.package(path: "../onebase-swift")`.
 
 ## Use
 
